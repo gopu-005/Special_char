@@ -1,0 +1,15 @@
+line = input('Enter a line : ')
+lower = upper = digit = alpha = 0
+for i in line :
+  if i.islower():
+    lower += 1
+  elif i.isupper():
+    upper += 1
+  elif i.isdigit():
+    digit += 1
+  if i.isalpha():
+    alpha += 1
+print('Number of Lower letters : ',lower)
+print('Number of Upper letters : ',upper)
+print('Number of digit : ',digit)
+print('Number of alphabets : ',alpha)
